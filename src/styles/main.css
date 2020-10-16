@@ -1,0 +1,21 @@
+@import '_vars.css';
+
+.application {
+  min-width: 1440px;
+  height: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+.content {
+  max-width: calc(100vw - 100px);
+  padding-top: var(--header-height);
+  flex-grow: 1;
+  background-color: #f5f6fa;
+}

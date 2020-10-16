@@ -1,0 +1,81 @@
+{
+  "language": "en",
+  "dictionaryDefinitions": [
+    {
+      "name": "russian", 
+      "file": "./node_modules/cspell-dict-russian/Russian.trie.gz",
+      "description": "Russian Dictionary"
+    },
+    { 
+      "name": "ru-ru", 
+      "file": "./node_modules/cspell-dict-ru_ru/ru_ru.trie.gz",
+      "description": "Russian Dictionary (Small)"
+    },
+    {
+      "name": "html-symbol-entities", 
+      "file": "./node_modules/cspell-dict-html-symbol-entities/entities.txt.gz",
+      "description": "Html symbol entities"
+    }
+  ],
+  "dictionaries": [
+    "russian",
+    "ru-ru",
+    "fonts",
+    "html",
+    "html-symbol-entities"
+  ],
+  "words": [
+    "quantron",
+    "durotan",
+    "backend",
+    "XVDK",
+    "redmine",
+
+    "keycode",
+    "validatejs",
+    "exceljs",
+    "mobx",
+    "jsbarcode",
+    "papaparse",
+    "polyfill",
+
+    "dropdown",
+    "focusable",
+    "uploader",
+    "desaturate",
+    "barcode",
+    "promisify",
+    "unmount",
+    "deserialize",
+    "callout",
+    "clearfix",
+    "unparse",
+    "declinate",
+
+    "maxsize",
+    "tabindex",
+
+    "seria",
+    "eosago",
+    "sravni",
+    "eaisto",
+    "dadata",
+    "srts",
+    "fxdk",
+    "АВЕКМНОРСТУ",
+    "Хавекмнорстух",
+    "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮ",
+    "Яабвгдеёжзийклмнопрстуфхцчшщъыьэюя",
+
+    "fortawesome",
+    "fontawesome",
+
+    "ГГГГ",
+    "Бццц",
+
+    "myrequests",
+    "mypayments",
+    "dkp",
+    "eosago"
+  ]
+}

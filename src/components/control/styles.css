@@ -1,0 +1,135 @@
+.control {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+  background: white;
+  padding: 16px;
+  width: 500px;
+  color: black;
+}
+.label {
+  display: inline-block;
+  font-size: 0.8rem !important;
+  color: grey;
+}
+.labelActive {
+  font-weight: bold !important;
+  color: black !important;
+}
+.formCheck {
+  padding-left: 1rem;
+  position: relative;
+}
+.radioInput {
+  margin-left: -1.25rem;
+  position: absolute;
+  top: 0.175rem;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.customRadioInput {
+  color: black !important;
+  padding: 0.5rem !important;
+}
+.radioLabel {
+  font-weight: bold;
+}
+.tooltipIcon {
+  position: absolute;
+  right: 3rem;
+  top: 0.4rem;
+}
+.tooltipIconWithHover:hover {
+  .tooltip {
+    display: block;
+  }
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  left: 12px;
+  top: 34px;
+  width: 180px;
+  background: indigo;
+  color: white;
+  padding: 1rem;
+  font-size: 0.75rem;
+  z-index: 2;
+}
+.tooltipShow {
+  display: block;
+}
+.tooltipAngle {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border-bottom: 10px solid indigo;
+  border-right: 10px solid transparent;
+}
+.formSlider {
+  padding-left: 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 0 15px;
+}
+.slider {
+  height: 20px;
+  width: 36px;
+  padding: 2px;
+  margin: 0 5px;
+  background: orange;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.slider.sliderOff {
+  background: silver;
+}
+.slider.sliderOff .sliderSwitch {
+  right: 16px;
+}
+.sliderSwitch {
+  height: 100%;
+  width: 20px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  float: right;
+  right: 0;
+  transition: right 0.3s;
+}
+.formInput {
+  width: auto;
+  padding-left: 3rem;
+  margin-bottom: 20px;
+}
+.input {
+  height: 30px !important;
+  width: 180px !important;
+  padding: 0.2rem 0.75rem !important;
+  margin-right: 0.3rem !important;
+  font-weight: bold !important;
+  border: 1px solid #768192 !important;
+  border-radius: 4rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &&::placeholder {
+    color: silver;
+    font-weight: normal;
+  }
+}
+.infoPanel {
+  width: auto;
+  padding: 1.25rem;
+  background: rgb(245, 236, 220);
+  border-radius: 0.3rem;
+}
+.inputAppend {
+  font-weight: bold;
+  line-height: 30px;
+  display: inline-block;
+}

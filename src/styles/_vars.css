@@ -1,0 +1,27 @@
+:root {
+  --font: 'Gilroy-Light';
+  --font-light: 'Gilroy-Light', sans-serif;
+  --font-extrabold: 'Gilroy-Extrabold', sans-serif;
+  --blue: #2e83cc;
+  --red: #f24c4e;
+  --white: white;
+  --grey0: #fcfcfc;
+  --grey1: #e5e5e5;
+  --black: #333333;
+  --header-height: 83px;
+  --button-height: 43px;
+  --button-color-normal: #37c924;
+  --button-color-hover: rgba(55, 201, 36, .19);
+  --button-color-disable: #37c9242f;
+  --dropdown-button-bgcolor-hover: #36c72330;
+  --button-color-text: #878787;
+  --button-color-border: #b8c5d3;
+  --panel-color-title: #223a58;
+  --panel-color-body: #ffffff;
+  --label-color-title: #223a58;
+  --input-color-text: #8898aa;
+  --input-select-picked-option: #92a1b1;
+  --left-menu-color-title: #b8c5d3;
+  --page-color-title: #31394d;
+  --table-color-border: #e1e1e1;
+}

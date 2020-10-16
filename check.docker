@@ -1,0 +1,10 @@
+FROM node:8.11.1-alpine
+
+WORKDIR /usr/src/admin
+
+COPY ./package.json .
+COPY ./package-lock.json .
+RUN npm i
+
+COPY . .
+CMD ["npm", "run", "check", "-s"]

@@ -1,0 +1,10 @@
+{
+  "SERVER_URL": "http://e-card-api.q-s.pw/",
+  "SERVER_TIMEOUT": 20000,
+  "WWW_PORT": "3001",
+  "DEV_SERVER_HOSTNAME": "localhost",
+  "BUNDLE_PARAMS": {
+    "SITE_URL": "http://e-card.q-s.pw/",
+    "REDMINE_URL": "http://redmine.quantron-systems.com"
+  }
+}

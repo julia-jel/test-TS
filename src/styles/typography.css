@@ -1,0 +1,50 @@
+/*css reset rule postcss-css-reset*/
+@reset-global pc;
+
+/* корневые селекторы по типу разрешены только в этом файле для сброса стилей */
+/* stylelint-disable selector-max-type */
+/* stylelint-disable selector-max-universal */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: normal;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    list-style-type: none;
+  }
+}
+
+button {
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+/* stylelint-disable selector-type-no-unknown */
+::-moz-focus-inner {
+  border: none;
+  outline: none;
+}
