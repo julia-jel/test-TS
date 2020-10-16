@@ -1,0 +1,305 @@
+parser: '@typescript-eslint/parser'
+overrides:
+  - 
+    files: ['*.js', '*.jsx']
+    parser: babel-eslint
+    rules:
+      import/named: 2
+      import/namespace: 2
+
+env:
+  commonjs: true
+  browser: true
+  es6: true
+  node: true
+
+plugins:
+  - react
+  - react-hooks
+  - '@typescript-eslint'
+  - header
+  - lodash
+  - import
+
+extends:
+  - 'plugin:@typescript-eslint/recommended'
+
+settings:
+  react:
+    version: detect
+  import/resolver:
+    node:
+      extensions:
+        - .js
+        - .jsx
+        - .ts
+        - .tsx
+    webpack:
+      resolve:
+        extensions:
+          - .js
+          - .jsx
+          - .ts
+          - .tsx
+
+rules:
+  no-unused-vars: 2
+  no-cond-assign: 2
+  no-dupe-args: 2
+  no-dupe-keys: 2
+  no-duplicate-case: 2
+  no-empty-character-class: 2
+  no-empty: 2
+  no-ex-assign: 2
+  no-extra-boolean-cast: 2
+  no-extra-semi: 2
+  no-func-assign: 2
+  no-invalid-regexp: 2
+  no-irregular-whitespace: 2
+  no-obj-calls: 2
+  no-unexpected-multiline: 2
+  use-isnan: 2
+#  no-unreachable: 2 for production
+  block-scoped-var: 2
+  complexity: 2
+#  curly: 2   need more tuning on this
+  default-case: 2
+  dot-notation: 2
+  no-caller: 2
+  no-else-return: 2
+  no-empty-pattern: 2
+  no-extend-native: 2
+  no-extra-bind: 2
+  no-extra-label: 2
+  no-fallthrough: 2
+  no-implicit-globals: 2
+  no-implied-eval: 2
+  no-iterator: 2
+  no-labels: 2
+  no-lone-blocks: 2
+  no-loop-func: 2
+  no-multi-spaces: 2
+  no-native-reassign: 2
+  no-new-func: 2
+  no-new-wrappers: 2
+  no-new: 2
+  no-octal: 2
+  no-proto: 2
+  no-redeclare: 2
+  no-return-assign: 2
+  no-script-url: 2
+  no-self-assign: 2
+  no-self-compare: 2
+  no-sequences: 2
+  no-throw-literal: 2
+  no-unmodified-loop-condition: 2
+  no-unused-expressions: 2
+  no-unused-labels: 2
+  no-useless-call: 2
+  no-useless-concat: 2
+  no-void: 2
+  no-with: 2
+  wrap-iife: 2
+  init-declarations: 2
+  no-catch-shadow: 2
+  no-delete-var: 2
+  no-label-var: 2
+  no-shadow-restricted-names: 2
+  no-undef: 2
+# no-extra-parens: 2
+  no-regex-spaces: 2
+  dot-location: [2, 'property']
+  no-useless-return: 2
+
+  global-require: 0
+  handle-callback-err: 2
+  no-mixed-requires: 2
+  no-new-require: 2
+  no-path-concat: 2
+
+  array-bracket-spacing: [2, 'never']
+  block-spacing: [2, 'always']
+  brace-style: [2, '1tbs', {allowSingleLine: true}]
+  camelcase: [2, {allow: ["^UNSAFE_"]}]
+  comma-spacing: 2
+  comma-dangle: 2
+  comma-style: 2
+  computed-property-spacing: [2, 'never']
+  func-call-spacing: [2, 'never']
+  func-style: [2, 'declaration', {"allowArrowFunctions": true}]
+  consistent-this: [2, 'that']
+  eol-last: 2
+  func-names: 2
+  id-length: [1, {exceptions: ['_', 'e', 'i', 'x', 'y']}]
+  indent: [2, 4, {SwitchCase: 1}]
+  jsx-quotes: [1, 'prefer-single']
+  key-spacing: 2
+  keyword-spacing: [2, {overrides: {if: {after: false}, for: {after: false}, while: {after: false}, switch: {after: false}, catch: {after: false}}}]
+  linebreak-style: [2, 'unix']
+  max-depth: 2
+  max-len: [2, 120]
+  max-nested-callbacks: 2
+  max-params: [2, 6]
+  max-statements: [2, 30, {ignoreTopLevelFunctions: true}] # TODO: should be decreased
+  new-cap: 0
+  new-parens: 2
+  no-lonely-if: 2
+  no-mixed-spaces-and-tabs: 2
+  no-multiple-empty-lines: [2, {max: 1, maxBOF: 0}]
+  no-nested-ternary: 2
+  no-whitespace-before-property: 2
+  no-spaced-func: 2
+  no-trailing-spaces: 2
+  no-unneeded-ternary: 2
+  object-curly-spacing: 2
+  one-var: [2, 'never']
+  one-var-declaration-per-line: 2
+  operator-assignment: [2, 'always']
+  padded-blocks: [2, 'never']
+  quote-props: [2, 'as-needed']
+  quotes: [2, 'single']
+  semi-spacing: [2, {before: false, after: true}]
+  semi: [2, 'always']
+  space-before-function-paren: [2, 'never']
+  space-in-parens: [2, 'never']
+  space-infix-ops: 2
+  space-unary-ops: 2
+  spaced-comment: [2, 'always', {exceptions: ['/']}]
+  lines-around-comment: [2, {allowBlockStart: true, beforeBlockComment: false, beforeLineComment: true}]
+
+  arrow-body-style: 2
+  arrow-parens: [2, 'as-needed']
+  arrow-spacing: 2
+  constructor-super: 2
+  generator-star-spacing: [2, 'after']
+  no-class-assign: 2
+  no-const-assign: 2
+  no-dupe-class-members: 2
+# no-useless-computed-key: 2
+  no-new-symbol: 2
+  no-var: 2
+  no-useless-constructor: 2
+  object-shorthand: 2
+  prefer-arrow-callback: 2
+  prefer-const: 2
+  prefer-rest-params: 2
+  prefer-spread: 2
+  require-yield: 2
+  template-curly-spacing: [2, 'never']
+  yield-star-spacing: [2, 'before']
+  rest-spread-spacing: 2
+  max-lines: [2, {max: 600, skipComments: true, skipBlankLines: true}]
+  no-tabs: 2
+  no-global-assign: 2
+  no-unsafe-negation: 2
+  no-async-promise-executor: 2
+  no-misleading-character-class: 2
+  # class-methods-use-this: 2
+  # prefer-destructuring: 2
+
+  react/jsx-key: 2
+  # react/jsx-indent: [2, 4, {checkAttributes: true, indentLogicalExpressions: true}]
+  react/jsx-no-duplicate-props: 2
+  react/jsx-no-undef: 2
+  react/jsx-pascal-case: 2
+  react/jsx-tag-spacing: 
+   - 2
+   -
+     closingSlash: never
+     beforeSelfClosing: never
+     afterOpening: never
+     beforeClosing: never
+
+  react/jsx-uses-react: 2
+  react/jsx-uses-vars: 2
+  react/no-is-mounted: 2
+  react/no-unknown-property: 2
+  react/require-extension: 0
+  react/self-closing-comp: 2
+  react/prefer-stateless-function: 2
+  react/require-render-return: 2
+  react/jsx-no-comment-textnodes: 2
+  react/jsx-filename-extension: [2, {extensions: ['.js', '.tsx']}]
+  react/no-danger-with-children: 2
+  react/no-children-prop: 2
+  react/no-typos: 2
+  react/react-in-jsx-scope: 2
+  react/no-unused-state: 2
+  react/jsx-curly-newline: [2, {multiline: 'require', singleline: 'consistent'}]
+  react/no-will-update-set-state: 2
+  react/no-deprecated: 2
+  # react/no-unsafe: 2
+  # react/no-access-state-in-setstate: 2
+  # react/jsx-one-expression-per-line: [2, {allow: 'literal'}]
+  react/jsx-max-depth: [2, {max: 10}]
+  react-hooks/rules-of-hooks: 2
+  react-hooks/exhaustive-deps: 2
+  lodash/callback-binding: 2
+  lodash/chain-style: [2, 'as-needed']
+  lodash/collection-return: 2
+  lodash/identity-shorthand: [2, 'always']
+  lodash/matches-prop-shorthand: [2, 'always']
+  lodash/matches-shorthand: [2, 'always', 3]
+  lodash/no-commit: 2
+  lodash/no-double-unwrap: 2
+  lodash/no-extra-args: 2
+  lodash/chaining: [2, 'never']
+  lodash/prefer-compact: 2
+  lodash/prefer-constant: 2
+  lodash/prefer-filter: [2, 3]
+  lodash/prefer-flat-map: 2
+  lodash/prefer-get: [2, 3]
+# lodash/prefer-invoke-map: 2
+  lodash/prefer-is-nil: 2
+  lodash/prefer-lodash-chain: 2
+  lodash/prefer-lodash-method: 
+   - 2
+   - 
+     ignoreMethods: 
+       - slice
+       - replace
+       - toLower
+       - toUpper
+       - split
+       - trim
+       - find
+       - forEach
+       - map
+       - reduce
+     ignoreObjects:
+       - fp
+       - Promise
+  lodash/prefer-lodash-typecheck: 2
+  lodash/prefer-map: 2
+  lodash/prefer-matches: [2, 3]
+  lodash/prefer-noop: 2
+  lodash/prefer-over-quantifier: 2
+  lodash/prefer-reject: [2, 3]
+  lodash/prefer-startswith: 2
+  lodash/prefer-thru: 2
+  lodash/prefer-times: 2
+  lodash/prefer-wrapper-method: 2
+  lodash/prop-shorthand: [2, 'always']
+  lodash/unwrap: 2
+  lodash/collection-method-value: 2
+  lodash/prefer-includes: 2
+  import/no-unresolved: 2
+  import/no-absolute-path: 2
+  import/export: 2
+  import/no-named-as-default: 2
+  import/no-named-as-default-member: 2
+  import/no-extraneous-dependencies: 2
+  import/no-mutable-exports: 2
+  import/unambiguous: 2
+  import/first: 2
+  import/no-duplicates: 2
+  import/extensions: [2, 'never']
+  import/order: 2
+  import/newline-after-import: 2
+  import/no-named-default: 2
+#  import/no-commonjs: 2
+#  no-dynamic-require: 2
+#  import/prefer-default-export: 2
+
+  '@typescript-eslint/explicit-function-return-type': 0
+  '@typescript-eslint/no-explicit-any': 0

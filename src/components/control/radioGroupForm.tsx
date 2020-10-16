@@ -29,7 +29,7 @@ function RadioGroupForm({incomeModel, setIncomeModel, showTooltip, setShowToolti
         <RadioGroup>
             {
                 _.map(incomeModelDictionary, (model: string, key: string) =>
-                    <FormControlLabel className={styles.formCheck}
+                    <FormControlLabel key={key} className={styles.formCheck}
                         control={<Radio className={styles.customRadioInput}/>}
                         value={key} checked={incomeModel === key}
                         onChange={() => setIncomeModel(key)}

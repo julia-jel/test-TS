@@ -24,14 +24,14 @@ function Control() {
     const brutto = formatNumber(_.floor(withTaxes ? amount : amount / 0.87));
 
     return <Box className={styles.control}>
-        <form>
+        <div>
             <RadioGroupForm incomeModel={incomeModel} setIncomeModel={setIncomeModel}
                 showTooltip={showTooltip} setShowTooltip={setShowTooltip}/>
 
             <SliderForm withTaxes={withTaxes} setWithTaxes={setWithTaxes}/>
 
             <InputForm amount={amount} setAmount={setAmount} incomeModel={incomeModel}/>
-        </form>
+        </div>
 
         {
             incomeModel === 'incomePerMonth' && amount > 0 && <div className={styles.infoPanel}>
